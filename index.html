@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Raíz Template</title>
+    <title>SportGym Cauquenes</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!--NAVBAR-->
     <nav class="top-nav" id="inicio">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-auto">
-                    <p>
+                <div class="col-auto">  
+                  <p>
                         <i class='bx bxs-envelope'></i>
                         <span>ejemplo.@gmail.com</span>
                     </p>
@@ -38,11 +38,12 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container">
+          <a href="#"><img src="./img/sp-g.png" height="35px" width="35px" alt=""></a>
           <a class="navbar-brand" href="#">SportGym<span>.</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon "></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -60,17 +61,112 @@
               </li>
             
             </ul>
-            <a href="#" class="btn btn-brand">Contacto</a>
+            <a href="#" class="btn btn-brand ms-lg">Contacto</a>
           </div>
         </div>
       </nav>
+
+      <!--- SLIDER -->
+      <div class="slider-wraper owl-carousel owl-theme" id="hero-slider">
+
+        <div class="slide1 min-vh-100 bg-cover d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h6 class="text-uppercase text-white">Nos dedicamos de leno al acondicionamiento físico</h6>
+                <h1 class="display-2 my-3 text-white text-uppercase">The best Gym in <br/>Cauquenes City</h1>
+                <a href="#" class="btn btn-brand">Empecemos</a>
+                <a href="#" class="btn btn-outline-light ms-md-3">Nuestro trabajo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide2 min-vh-100 bg-cover d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12r">
+                <h6 class="text-uppercase text-white">Te apoyamos en lograr tus objetivos</h6>
+                <h1 class="display-2 my-3 text-white text-uppercase">Te ayudamos a lograr<br/>tus objetivos</h1>
+                <a href="#" class="btn btn-brand">Empecemos</a>
+                <a href="#" class="btn btn-outline-light ms-md-3">Nuestro trabajo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!--- ABOUT -->
+      <section>
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-5">
+              <div class="row">
+                <div class="col-12 info-box">
+                  <!---<i class='bx bx-dumbbell' style="font-size: 45px;"></i> -->
+                  <img src="./img/sala-musc.png" alt="">
+                  <div>
+                    <h5>Sala de Musculación</h5>
+                    <p>Ofrecemos una sala de musculación de dos ambientes completamente equipadas que ayuda a desarrollar cada grupo muscular.</p>
+                  </div>
+                </div>
+                <div class="col-12 info-box mt-3">
+                  <!---<i class='bx bx-dumbbell' style="font-size: 45px;"></i> -->
+                  <img src="./img/ej-card.png"  alt="">
+                  <div>
+                    <h5>Ejercicio Cardiovascular</h5>
+                    <p>Trotadoras y biciletas estáticas a la altura del mercado para bajar su índice de grasa corporal y lograr una definición acorde a sus necesidades.</p>
+                  </div>
+                </div>
+                <div class="col-12 info-box mt-4">
+                  <!---<i class='bx bx-dumbbell' style="font-size: 45px;"></i> -->
+                  <img src="./img/clases-personalizadas.png"  alt="">
+                  <div>
+                    <h5>Clases personalizadas</h5>
+                    <p>Nuestro equipo ofrece clases personalzadas para quienes deseen tener una guía, recibiendo apoyo tanto técnico, nutricional y motivacional.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <img class="logo-p" src="./img/sp-g.png"  alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--- MILESTONE -->
+
+      <section id="milestone" class="bg-cover">
+        <div class="container">
+          <div class="row text-center justify-content-center">
+            <div class="col-lg-3 col-sm-6">
+              <div class="display-4">150</div>
+              <p class="mb-0">Clientes felices</p>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="display-4">25</div>
+              <p class="mb-0">Máquinas de musculación</p>
+            </div>
+              <div class="col-lg-3 col-sm-6">
+              <div class="display-4">38</div>
+              <p class="mb-0">Mancuernas</p>
+            </div>
+              <div class="col-lg-3 col-sm-6">
+              <div class="display-4">4</div>
+              <p class="mb-0">Máquinas de cardio</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
     
-
-
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/app.js"></script>
 
-    
   </body>
 </html>
