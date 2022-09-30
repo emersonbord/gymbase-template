@@ -313,3 +313,74 @@ section{
     vertical-align: middle;
     margin-right: 12px;
 }
+
+/* TEAM */
+
+.team-member{
+    text-align: center;
+}
+
+.social-links-team a {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff5f5;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.social-links-team a:hover {
+    background-color: #fff5f5;
+    color: #FF0303;
+}
+
+.team-member .img-wrapper{
+    position: relative;
+    overflow: hidden;
+    border-radius: 6%;
+}
+
+.team-member .overlay{
+    position: absolute;
+    bottom: -10%;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(255, 3, 3, 0.555);
+    transition: all 0.4s ease;
+    opacity: 0;
+    border-radius: 6%;
+}
+
+.team-member .social-links-team{
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: all 0.4s ease;
+opacity: 0;
+}
+
+.team-member:hover .overlay{
+    opacity: 1;
+    top: 0;
+}
+
+.team-member:hover .social-links-team{
+    opacity: 1;
+    top: 50%;
+}
+
+.team-member h5{
+    margin-top: 24px;
+}
+
+/**OTROS*/
+.dimensionesTeam{
+    height: 350px;
+    width: 330px;
+}
